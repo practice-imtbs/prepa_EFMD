@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Faculty panel preparation for the EFMD visit of IMT Business School's PGE: ILOs, likely questions, sample answers, one page per faculty member. English / Français.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23AD1D89'/%3E%3Ctext x='16' y='22' font-size='17' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+<title>Panel enseignant EFMD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&display=swap">
+<style>
+:root{
+  --violet:#AD1D89; --violet-ink:#8A1670; --bleu:#007FA0; --bleu-vif:#00B8DE;
+  --bg:#FBF9FB; --surface:#FFFFFF; --ink:#1C1620; --muted:#5E5463; --line:#E6DEE5; --tint:#F6EDF4; --tint-bleu:#E8F6FA;
+  --ok:#2E7D4F; --warn:#9A5B00; --warn-bg:#FFF4E0; --on-violet:#fff;
+  --i1:#007FA0; --i2:#AD1D89; --i3:#2E7D4F; --i4:#B5500F; --i5:#5B4BB7; --i6:#B0173F;
+  --f-display:"Zilla Slab","Archer","Rockwell",Georgia,serif;
+  --f-body:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --violet:#E066BE; --violet-ink:#F08FD3; --bleu:#5FD0EC; --bleu-vif:#5FD0EC;
+  --bg:#141016; --surface:#1E1820; --ink:#F2ECF1; --muted:#B4A8B2; --line:#3A2F39; --tint:#2A1D28; --tint-bleu:#14262C;
+  --ok:#6FCF97; --warn:#F2B35B; --warn-bg:#2E2213; --on-violet:#141016;
+  --i1:#5FD0EC; --i2:#E066BE; --i3:#6FCF97; --i4:#F2A15B; --i5:#A99BF2; --i6:#F27D9A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --violet:#E066BE; --violet-ink:#F08FD3; --bleu:#5FD0EC; --bleu-vif:#5FD0EC;
+  --bg:#141016; --surface:#1E1820; --ink:#F2ECF1; --muted:#B4A8B2; --line:#3A2F39; --tint:#2A1D28; --tint-bleu:#14262C;
+  --ok:#6FCF97; --warn:#F2B35B; --warn-bg:#2E2213; --on-violet:#141016;
+  --i1:#5FD0EC; --i2:#E066BE; --i3:#6FCF97; --i4:#F2A15B; --i5:#A99BF2; --i6:#F27D9A; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:60rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--violet-ink)}
+
+/* Bandeau */
+header.band{background:#AD1D89;color:#fff}
+header.band .wrap{padding-block:16px 26px;display:grid;gap:10px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.eyebrow{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;opacity:.92}
+.lang{display:inline-flex;border:1px solid rgba(255,255,255,.7);border-radius:999px;overflow:hidden}
+.lang button{font:inherit;font-size:.8rem;font-weight:700;letter-spacing:.05em;background:transparent;color:#fff;border:0;padding:5px 13px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff;color:#8A1670}
+.lang button:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.8rem,4.5vw,2.7rem);line-height:1.1;margin:0;text-wrap:balance}
+.band p{margin:0;max-width:46rem;opacity:.96}
+.crumb{font-size:.88rem}
+.crumb a{color:#fff}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.cta{font:inherit;font-size:.95rem;font-weight:700;text-decoration:none;border-radius:8px;padding:9px 16px;cursor:pointer;border:2px solid #fff;display:inline-block}
+.cta.solid{background:#fff;color:#8A1670}
+.cta.line{background:transparent;color:#fff}
+.cta:focus-visible{outline:3px solid var(--bleu-vif);outline-offset:2px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:6px}
+.hero-meta .chip{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.6);color:#fff}
+
+/* Navigation */
+nav.main{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.main .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:thin;align-items:center}
+.tab{flex:0 0 auto;font:inherit;font-size:.9rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;white-space:nowrap;text-decoration:none}
+.tab:hover{border-color:var(--violet)}
+.tab[aria-current="page"]{background:var(--violet);border-color:var(--violet);color:var(--on-violet)}
+.tab.sm{font-size:.82rem;padding:4px 11px;background:transparent}
+.sep{flex:0 0 1px;align-self:stretch;background:var(--line);margin:2px 6px}
+.tab:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--bleu-vif);outline-offset:2px}
+section[id]{scroll-margin-top:70px}
+
+/* Contenu */
+main .wrap{padding-block:28px 64px;display:grid;gap:44px}
+section{display:grid;gap:14px;min-width:0}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.6rem;line-height:1.2;margin:0;color:var(--violet-ink);text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:600;font-size:1.18rem;margin:0;text-wrap:balance}
+p{margin:0;max-width:65ch}
+.lead{font-size:1.08rem}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+.say{border-left:3px solid var(--bleu);background:var(--tint-bleu);padding:12px 16px;border-radius:0 var(--r) var(--r) 0;display:grid;gap:6px}
+.say .lbl,.lbl{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--bleu);font-weight:700}
+.say p{font-style:italic}
+.todo{background:var(--warn-bg);border:1px dashed var(--warn);color:var(--ink);padding:10px 14px;border-radius:var(--r);font-size:.92rem}
+.todo b{color:var(--warn)}
+body:not(.team) .int{display:none!important}
+body.team .ext{display:none!important}
+.ilos{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:12px}
+.ilo{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:var(--r);padding:14px 16px;display:grid;gap:8px;align-content:start}
+.ilo .num{font-family:var(--f-display);font-weight:700;color:var(--c);font-size:1.05rem}
+.ilo .name{font-weight:700}
+.ilo .fr{font-size:.92rem}
+.ilo .en{font-size:.88rem}
+.ilo .en.sub{color:var(--muted);font-style:italic;font-size:.86rem}
+.ilo .key{font-size:.8rem;color:var(--c);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--tint);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font-size:.8rem;font-weight:700;border:1px solid var(--line);background:var(--surface);white-space:nowrap}
+.chip.v{border-color:var(--c,var(--violet));color:var(--c,var(--violet-ink))}
+.chip.v.sec{font-weight:600;border-style:dashed}
+.chip.s{color:var(--muted)}
+.chip.warn{border-color:var(--warn);color:var(--warn);background:var(--warn-bg)}
+.chip.ok{border-color:var(--ok);color:var(--ok)}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.9rem;min-width:0}
+.node b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.arrow{color:var(--violet);font-weight:700}
+.loop{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:8px;counter-reset:s}
+.loop div{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--violet);border-radius:8px;padding:10px 12px;font-size:.9rem;counter-increment:s}
+.loop div::before{content:counter(s);font-family:var(--f-display);font-weight:700;color:var(--violet);margin-right:6px}
+.steps{display:grid;gap:10px}
+.step{display:grid;grid-template-columns:2.2rem 1fr;gap:12px;align-items:start}
+.step .n{font-family:var(--f-display);font-weight:700;font-size:1.3rem;color:var(--violet);line-height:1}
+.step .body{display:grid;gap:6px;min-width:0;border-bottom:1px solid var(--line);padding-bottom:12px}
+.step .chez{font-size:.92rem}
+details{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+details>summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"+";color:var(--violet);font-weight:700}
+details[open]>summary::after{content:"−"}
+details .inner{padding:0 16px 14px;display:grid;gap:10px}
+.qa summary .q{font-weight:700}
+.qa summary .qfr{display:block;font-weight:400;font-size:.86rem;color:var(--muted)}
+ul.clean{margin:0;padding-left:1.1rem;display:grid;gap:4px;max-width:65ch}
+.qlist{display:grid;gap:8px}
+.drill{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:12px}
+.drill .cardq{font-family:var(--f-display);font-size:1.25rem;font-weight:600;min-height:3.2em}
+.drill .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button.btn{font:inherit;font-size:.9rem;border-radius:8px;border:1px solid var(--violet);background:var(--violet);color:var(--on-violet);padding:7px 14px;cursor:pointer}
+button.btn.ghost{background:transparent;color:var(--violet-ink)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:14px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:grid;gap:8px;align-content:start;min-width:0}
+
+/* Choix de l'enseignant */
+.finder{display:grid;gap:10px}
+.finder input[type=search]{font:inherit;width:100%;max-width:26rem;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.grp{display:grid;gap:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:12px}
+.pcard{display:grid;grid-template-columns:3rem 1fr;gap:12px;align-items:start;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;transition:border-color .15s,transform .15s}
+.pcard:hover{border-color:var(--violet);transform:translateY(-2px)}
+.avatar{width:3rem;height:3rem;border-radius:50%;background:var(--violet);color:var(--on-violet);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:1.1rem}
+.pcard .nm{font-family:var(--f-display);font-weight:600;font-size:1.12rem;line-height:1.2}
+.pcard .meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.cta-box{background:var(--tint);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.cta-box h3{margin-bottom:2px}
+.cta-box .cta{background:var(--violet);color:var(--on-violet);border-color:var(--violet)}
+
+/* Page enseignant */
+.prof-head{display:grid;gap:6px}
+.prof-head .meta{display:flex;flex-wrap:wrap;gap:6px}
+.jump{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.88rem}
+.jump select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.14);color:#fff}
+.jump select option{color:#1C1620;background:#fff}
+.course-list{display:grid;gap:12px}
+.course{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--violet));border-radius:var(--r);padding:14px 16px;display:grid;gap:8px;min-width:0}
+.course .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
+.course .code{font-variant-numeric:tabular-nums;font-weight:700;color:var(--muted);font-size:.85rem}
+.course .title{font-weight:700}
+.course dl{display:grid;grid-template-columns:8.5rem 1fr;gap:4px 12px;margin:0;font-size:.9rem}
+.course dt{color:var(--muted)}
+.course dd{margin:0;min-width:0}
+@media (max-width:520px){.course dl{grid-template-columns:1fr}.course dt{margin-top:6px}}
+.figs{display:flex;flex-wrap:wrap;gap:6px 14px;font-variant-numeric:tabular-nums;font-size:.88rem}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pager a{display:block;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:10px 14px;color:var(--ink);min-width:12rem}
+.pager a:hover{border-color:var(--violet)}
+.pager small{display:block;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.07em}
+.pager .next{text-align:right;margin-left:auto}
+
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+footer .wrap{padding-block:18px 28px;display:grid;gap:6px}
+footer label{display:inline-flex;gap:8px;align-items:center;cursor:pointer}
+.skip{position:absolute;left:-999px;top:0;background:var(--surface);color:var(--ink);padding:8px 14px;z-index:20;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.back{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:16px;z-index:6;opacity:0;pointer-events:none;transition:opacity .2s;font:inherit;font-size:.85rem;border:1px solid var(--violet);background:var(--surface);color:var(--violet-ink);border-radius:999px;padding:6px 14px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.back.on{opacity:1;pointer-events:auto}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{
+  nav.main,.back,.skip,#drill-show,#drill-next,.lang,.hero-cta,.jump,.pager,.cta-box{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  header.band{background:#fff;color:#AD1D89;border-bottom:2px solid #AD1D89}
+  header.band .wrap,.band p,.crumb a{color:#AD1D89}
+  details>*{display:block!important}
+  details>summary::after{content:""}
+  section,.box,.course,.ilo,details{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu" id="skip">Skip to content</a>
+
+<header class="band">
+  <div class="wrap">
+    <div class="topline">
+      <div class="eyebrow" id="brand"></div>
+      <div class="lang" role="group" aria-label="Language / Langue">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+    <div id="hero"></div>
+  </div>
+</header>
+
+<nav class="main" id="nav" aria-label="Main"></nav>
+
+<main id="contenu" tabindex="-1"><div class="wrap" id="app"></div></main>
+
+<footer><div class="wrap">
+  <span id="foot1"></span>
+  <span id="foot2"></span>
+</div></footer>
+
+<button class="back" id="back" type="button"></button>
+
+<script>
+/* ====== Outils de langue ====== */
+const L=(f,e)=>[f,e];
+let lang="en";const team=false;
+try{lang=localStorage.getItem("panel-lang")||"en"}catch(e){}
+if(/[?&]lang=(fr|en)/.test(location.search))lang=RegExp.$1;
+
+/* Typographie française : espaces insécables avant : ; ? ! % » et après « */
+const frTypo=s=>s.replace(/ ([:;?!%»])/g," $1").replace(/« /g,"« ").replace(/\b(ILO|Groupe|Question|FIN|MIS|INF|MKT|ACC|RES|STR|MAN|ECO|QUA) (\d)/g,"$1 $2").replace(/(\d) (h\b)/g,"$1 $2");
+const t=x=>{const s=typeof x==="string"?x:x[lang==="fr"?0:1];return lang==="fr"?frTypo(s):s};
+const $=s=>document.querySelector(s);
+const num=(n,d)=>{const s=d===undefined?String(n):Number(n).toFixed(d);return lang==="fr"?s.replace(".",","):s};
+const pct=(n,d)=>lang==="fr"?num(n,d)+"\u00A0%":num(n,d)+"%";
+
+/* ====== Textes de l'interface ====== */
+const U={
+ brand:L("IMT Business School · Accréditation EFMD du PGE (IMM)","IMT Business School · EFMD accreditation of the PGE (IMM)"),
+ skip:L("Aller au contenu","Skip to content"),
+ navGen:L("Général","General"),navPage:L("Votre page","Your page"),
+ up:L("↑ Haut","↑ Top"),
+ foot1:L("Service PracTice · IMT Business School · version de travail du 15/10/2026, document interne.","PracTice service · IMT Business School · working version of 15/10/2026, internal document."),
+ foot2:L("Sources : datasheet EFMD, programmes de visite du 13/10/2026, catalogue PGE 2025-2026, correspondance blocs et ILO, tableau ILO Achievement 2025-26.","Sources: EFMD datasheet, visit schedules of 13/10/2026, 2025-2026 PGE catalogue, block-to-ILO mapping, ILO Achievement 2025-26 table."),
+
+ homeTitle:L("Préparer le panel enseignant","Preparing for the faculty panel"),
+ homeLead:L("Audit blanc le jeudi 26 novembre, visite des auditeurs le jeudi 3 décembre 2026. Ce que chacun·e doit savoir dire, en français pour comprendre et en anglais pour répondre.","Mock review on Thursday 26 November, peer review visit on Thursday 3 December 2026. What every faculty member should be able to say, in English, when the reviewers ask."),
+ ctaFind:L("Trouver ma page personnelle →","Find my personal page →"),
+ ctaRead:L("Lire les principes généraux ↓","Read the general principles ↓"),
+ anchors:[["sec-dates",L("Dates","Dates")],["ilos",L("Les six ILOs","Six ILOs")],["blocs",L("ILOs et blocs","ILOs and blocks")],["construction",L("Construction","How built")],["boucle",L("Boucle d'amélioration","Improvement loop")],["incontournables",L("Questions clés","Key questions")],["entrainement",L("S'entraîner","Practise")],["banque",L("Banque de questions","Question bank")],["regles",L("Règles du jour J","Day-one rules")]],
+ sayLbl:L("À dire en anglais","Sample answer"),
+ outline:L("Trame","Outline"),exAnswer:L("Exemple de réponse","Example answer"),
+ // Accueil
+ s1Title:L("Ce que les auditeurs viennent vérifier","What the reviewers come to check"),
+ s1p1:L("Pendant environ une heure, quatre auditeurs interrogent un groupe d'enseignant·es. Ils écoutent moins le contenu des cours que la façon dont vous parlez de la démarche : la connaissez-vous, y avez-vous participé, l'utilisez-vous pour faire évoluer vos cours ?","For about an hour, four peer reviewers will question a group of faculty members. They care less about the content of your courses than about how you talk about the quality approach: do you know it, did you take part in it, do you use it to improve your courses?"),
+ s1p2:L("Ils cherchent un signal faible. Une école où la démarche qualité est portée par la direction seule (« faites vos cours, on s'occupe du dossier ») ne passe pas. Ils veulent voir une organisation qui apprend : chacun·e connaît les six ILOs, sait où se place son cours et peut donner un exemple d'amélioration. Personne ne doit découvrir ces notions le jour J.","They look for weak signals. A school where quality is carried by management alone (“teach your courses, we'll take care of the file”) does not pass. They want to see a learning organisation: everyone knows the six ILOs, knows where their course fits and can give an example of an improvement. Nobody should discover these notions on the day."),
+ mockLbl:L("Audit blanc","Mock review"),
+ mockT:L("Jeudi 26 novembre 2026, 13h15 à 14h30","Thursday 26 November 2026, 1:15 pm to 2:30 pm"),
+ mockP:L("Un seul groupe, avec Björn Kjellander (Jönköping University). Répétition générale, en anglais.","A single group, with Björn Kjellander (Jönköping University). Dress rehearsal, in English."),
+ prvLbl:L("Visite EFMD (Peer Review Visit)","EFMD visit (Peer Review Visit)"),
+ prvT:L("Jeudi 3 décembre 2026, 14h45 à 16h00","Thursday 3 December 2026, 2:45 pm to 4:00 pm"),
+ prvP:L("Deux groupes de 4 à 5 personnes. Présidente : Julie Perrin-Halot (GEM). Avec Thomas Cleff (Pforzheim), Shirley Rate (Glasgow Caledonian) et Burcu Vural (British Council).","Two groups of 4 to 5 people. Chair: Julie Perrin-Halot (GEM). With Thomas Cleff (Pforzheim), Shirley Rate (Glasgow Caledonian) and Burcu Vural (British Council)."),
+ s2Title:L("Les six ILOs, à connaître par cœur","The six ILOs: know them by heart"),
+ s2p:L("Un ILO (<em>Intended Learning Outcome</em>) décrit ce qu'un·e diplômé·e du programme sait faire <strong>à la fin du programme</strong>, en connaissances, savoir-faire et attitudes. Il y en a six. Ils s'appliquent à partir de 2026-27. Retenez au moins le mot-clé de chacun.","An ILO (<em>Intended Learning Outcome</em>) describes what a graduate of the programme can do <strong>at the end of the programme</strong>, in terms of knowledge, skills and attitudes. There are six. They apply from 2026-27. Remember at least the keyword of each one."),
+ s2say:L("“Our programme has six intended learning outcomes. By the end of the IMM, our graduates are able to use digital technologies and data responsibly, think critically and innovate, create sustainable value, lead transformation projects, communicate in multicultural settings and lead responsibly.”","“Our programme has six intended learning outcomes. By the end of the IMM, our graduates are able to use digital technologies and data responsibly, think critically and innovate, create sustainable value, lead transformation projects, communicate in multicultural settings and lead responsibly.”"),
+ s3Title:L("ILOs et blocs de compétences : deux grilles, un même diplôme","ILOs and competency blocks: two frameworks, one degree"),
+ s3p:L("On les confond facilement, car les deux décrivent des compétences. Ils ne répondent pas à la même question et ne se construisent pas de la même façon.","They are easily confused, because both describe competencies. They do not answer the same question and are not built the same way."),
+ thBlocks:L("Blocs de compétences","Competency blocks"),
+ rows:[
+  [L("D'où ça vient","Where it comes from"),L("Fiche RNCP du diplôme, enregistrée auprès de France Compétences","The degree's RNCP sheet, registered with France Compétences"),L("Standards EFMD (Annexe 9 du manuel d'accréditation), choisis par l'école","EFMD standards (Appendix 9 of the accreditation manual), chosen by the school")],
+  [L("Combien","How many"),L("8 blocs, découpés en compétences (C1.1, C1.2…) puis en MAC","8 blocks, broken down into competencies (C1.1, C1.2…) and then MACs"),L("6 ILOs pour tout le programme","6 ILOs for the whole programme")],
+  [L("À quoi ça sert","What it is for"),L("Certifier le diplôme : l'étudiant·e valide chaque bloc","Certifying the degree: students validate each block"),L("Prouver que la cohorte atteint les objectifs du programme et l'améliorer (Assurance of Learning)","Proving that the cohort reaches the programme's objectives and improving it (Assurance of Learning)")],
+  [L("Comment on mesure","How it is measured"),L("Validation des cours rattachés à chaque bloc","Validation of the courses attached to each block"),L("Preuves directes sélectionnées dans les cours, avec un seuil cible, analysées chaque année","Direct evidence selected in courses, with a target threshold, analysed every year")],
+  [L("Langue de travail","Working language"),L("Français","French"),L("Anglais","English")]
+ ],
+ s3h:L("Comment on passe de l'un à l'autre","How to get from one to the other"),
+ flow:[
+  [L("Bloc RNCP","RNCP block"),L("ex. « Conduire des projets de transformation »","e.g. “Lead transformation projects”")],
+  [L("Compétence","Competency"),L("C4.1, C4.2…","C4.1, C4.2…")],
+  [L("Cours","Course"),L("ex. Gestion de projet","e.g. Project management")],
+  [L("ILO principal","Main ILO"),L("ILO 4 Transformation","ILO 4 Transformation")],
+  [L("ILO secondaire","Secondary ILO"),L("ILO 3 Value Creation","ILO 3 Value Creation")]
+ ],
+ s3p2:L("La correspondance n'est pas une équivalence un pour un. Un même bloc peut nourrir plusieurs ILOs, et chaque cours a un ILO principal, parfois un ILO secondaire. Le tableau de correspondance (blocs, MAC, cours, ILO) a été établi à partir des syllabus 2025-26 : c'est lui qui dit dans quel ILO s'inscrit votre cours. Votre page personnelle en reprend les lignes qui vous concernent.","The mapping is not one-to-one. A single block can feed several ILOs, and each course has a main ILO and sometimes a secondary one. The mapping table (blocks, MACs, courses, ILOs) was built from the 2025-26 syllabi: it tells you which ILO your course belongs to. Your personal page lists the lines that concern you."),
+ s3say:L("“The competency blocks come from our national certification framework, the RNCP. The ILOs are our programme-level outcomes for EFMD. We mapped every course to the blocks and to the ILOs, so each syllabus shows which ILO the course mainly contributes to.”","“The competency blocks come from our national certification framework, the RNCP. The ILOs are our programme-level outcomes for EFMD. We mapped every course to the blocks and to the ILOs, so each syllabus shows which ILO the course mainly contributes to.”"),
+ s4Title:L("Comment les ILOs ont été construits","How the ILOs were built"),
+ s4p:L("C'est la question qui teste le plus l'implication des enseignant·es : « Comment avez-vous été associé·e ? ». Voici la démarche habituelle des écoles accréditées, étape par étape, et ce qui s'est fait chez nous à chaque étape.","This is the question that tests faculty involvement the most: “How were you involved?” Here is the usual approach in accredited schools, step by step, and what happened here at each step."),
+
+ here:L("Chez nous :","Here:"),
+ s4say:L("“We were involved from the start. The competency approach was presented in our department meetings, we rewrote our syllabi with the support of the pedagogical team, and each course is now linked to the competencies and to an ILO. The results are discussed in the Assurance of Learning Committee, and we get them back to adjust our courses.”","“We were involved from the start. The competency approach was presented in our department meetings, we rewrote our syllabi with the support of the pedagogical team, and each course is now linked to the competencies and to an ILO. The results are discussed in the Assurance of Learning Committee, and we get them back to adjust our courses.”"),
+ s5Title:L("La boucle d'amélioration continue","The continuous improvement loop"),
+ s5p:L("Les auditeurs veulent que la boucle soit connue des enseignant·es, et pas seulement écrite dans le rapport. Elle a cinq temps :","The reviewers want the loop to be known by faculty, not just written in the report. It has five stages:"),
+ loop:[L("Définir l'ILO et la preuve qui le mesure","Define the ILO and the evidence that measures it"),L("Mesurer dans les cours rattachés","Measure in the mapped courses"),L("Analyser les résultats en comité AoL","Analyse the results in the AoL committee"),L("Améliorer le cours ou l'évaluation","Improve the course or its assessment"),L("Mesurer à nouveau l'année suivante","Measure again the following year")],
+ s5p2:L("<strong>Note du cours et atteinte d'un ILO, ce n'est pas la même chose.</strong> La note dit si un·e étudiant·e a validé votre cours. L'ILO se mesure sur l'ensemble de la cohorte, à partir de plusieurs cours : un ILO peut reposer sur 15 ou 20 modules. Votre rôle : évaluer de façon cohérente avec l'ILO de votre cours, faire des retours aux étudiant·es, puis regarder vos résultats (notes, répartition, évaluations du cours) pour ajuster votre façon d'enseigner.","<strong>A course grade and ILO attainment are not the same thing.</strong> The grade says whether a student passed your course. An ILO is measured across the whole cohort, from several courses: one ILO can rest on 15 or 20 modules. Your role: assess consistently with your course's ILO, give students feedback, then look at your results (grades, distribution, course evaluations) to adjust how you teach."),
+ s5h:L("Résultats 2025-26, année de référence","2025-26 results, reference year"),
+ s5small:L("Part des notes à 10/20 ou plus dans les modules dont c'est l'ILO principal. Seuil cible fixé le 14/10/2026 : 80 %.","Share of grades at 10/20 or above in modules whose main ILO this is. Target threshold set on 14/10/2026: 80%."),
+ thMod:L("Modules","Modules"),thGr:L("Notes","Grades"),thPass:L("Réussite","Pass rate"),thTarget:L("Cible atteinte","Target met"),yes:L("Oui","Yes"),narrow:L("base étroite","narrow base"),
+ s5p3:L("Les six ILOs sont atteints, mais ce seuil se confond avec la simple réussite aux modules. L'équipe AoL propose d'ajouter un niveau attendu (12/20 ou « Meets expectations » sur une grille) à partir de 2026-27, pour faire apparaître de vrais écarts à travailler. Si on vous interroge sur les chiffres, dites que la mesure s'affine, c'est un signe de maturité.","All six ILOs are met, but this threshold is hard to tell apart from simply passing modules. The AoL team proposes adding an expected level (12/20 or “Meets expectations” on a rubric) from 2026-27, to reveal real gaps to work on. If asked about the figures, say that measurement is being refined, which is a sign of maturity."),
+ s5ex:L("Des exemples concrets à citer","Concrete examples to quote"),
+ ex1:L("<b>Majeure DSF :</b> FIN 6203 Digital tools and trading strategies (55 % de réussite) et MIS 6201 Modeling financial processes (73 %) sont sous le seuil. C'est un écart identifié, qui appelle une action et une nouvelle mesure.","<b>DSF major:</b> FIN 6203 Digital tools and trading strategies (55% pass rate) and MIS 6201 Modeling financial processes (73%) are below the threshold. This is an identified gap, calling for action and a new measurement."),
+ ex2:L("<b>Majeure DDDM :</b> refonte des cours après le focus group de professionnels du 30 mars 2026.","<b>DDDM major:</b> courses redesigned after the professionals' focus group of 30 March 2026."),
+
+ ex3:L("<b>Votre propre cours :</b> chaque page personnelle propose une piste. Préparez un exemple vécu, même modeste : un barème revu, un cas changé, un retour plus rapide.","<b>Your own course:</b> each personal page suggests a lead. Prepare a real example, however modest: a revised marking scheme, a changed case, faster feedback."),
+ s6Title:L("Les questions incontournables","The essential questions"),
+ s6p:L("Ces questions reviennent dans presque tous les panels. Les réponses doivent devenir des réflexes. Ouvrez chaque question pour voir les éléments de réponse.","These questions come up in almost every panel. The answers should become reflexes. Open each question to see the elements of an answer."),
+ s7Title:L("S'entraîner","Practise"),
+ s7p:L("Une question tirée au hasard dans la banque. Répondez à voix haute en anglais, en moins d'une minute, avant de regarder ce que cherchent les auditeurs.","A random question from the bank. Answer aloud in English, in under a minute, before looking at what the reviewers are after."),
+ dShow:L("Voir ce qu'ils cherchent","See what they are looking for"),dNext:L("Autre question","Another question"),
+ dCount:(a,b)=>lang==="fr"?`Question ${a} sur ${b}`:`Question ${a} of ${b}`,
+ lookfor:L("Ce qu'ils cherchent :","What they are looking for:"),
+ s8Title:L("La banque de questions","The question bank"),
+ s8p:L("Les questions possibles, classées en dix thèmes. Toutes ne tomberont pas, mais chacun·e doit pouvoir répondre aux thèmes 1, 2 et 5.","Possible questions, grouped into ten themes. Not all will come up, but everyone should be able to answer themes 1, 2 and 5."),
+ s9Title:L("Les règles du jour J","Day-one rules"),
+ rules:[L("Tout se passe <b>en anglais</b> et <b>en présentiel</b>, sans hybride. Tenue business casual.","Everything takes place <b>in English</b> and <b>in person</b>, no hybrid. Business casual dress."),
+  L("<b>Interdit :</b> enregistrer l'entretien, utiliser un traducteur ou une application de traduction.","<b>Forbidden:</b> recording the session, using a translator or a translation app."),
+  L("Répondez par des exemples concrets tirés de vos cours. Une réponse courte et précise vaut mieux qu'un discours général.","Answer with concrete examples from your courses. A short, precise answer beats a general speech."),
+  L("Si vous ne savez pas, dites-le simplement et indiquez qui pilote le sujet (comité AoL, direction du programme).","If you don't know, say so simply and say who leads the topic (AoL committee, programme management)."),
+  L("Les horaires peuvent bouger selon les auditeurs : restez joignables le jour de votre séance.","Schedules may change depending on the reviewers: stay reachable on the day of your session.")],
+ ctaBoxT:L("Et maintenant, votre page","Now, your own page"),
+ ctaBoxP:L("Vos cours, l'ILO de chacun, votre réponse en 30 secondes et vos points à préparer.","Your courses, the ILO of each, your 30-second answer and your points to prepare."),
+ // Sélecteur
+ findTitle:L("Trouver ma page","Find my page"),
+ findLead:L("Choisissez votre nom pour voir vos cours, l'ILO auquel chacun contribue, votre réponse en 30 secondes en anglais et vos points à préparer.","Choose your name to see your courses, the ILO each one contributes to, your 30-second answer in English and your points to prepare."),
+ search:L("Rechercher un nom","Search by name"),none:L("Aucun résultat.","No result."),
+ nCourses:n=>lang==="fr"?`${n} cours`:`${n} course${n>1?"s":""}`,
+ // Page enseignant
+ allTeachers:L("← Tous les enseignants","← All faculty"),switchTo:L("Aller à :","Go to:"),
+ dept:L("Département","Department"),
+ pitchT:L("Votre réponse en 30 secondes","Your 30-second answer"),
+ pitchP:L("À la question « Which ILO does your course contribute to? ». À adapter avec vos mots, puis à répéter à voix haute.","To the question “Which ILO does your course contribute to?”. Adapt it in your own words, then repeat it aloud."),
+ coursesT:L("Vos cours et leur ILO","Your courses and their ILO"),
+ coursesP:L("Évaluations d'après le catalogue PGE 2025-26. Les résultats chiffrés ne sont disponibles que pour les modules de M2 : ce sont des points d'appui pour parler d'amélioration, pas une note sur votre travail.","Assessments from the 2025-26 PGE catalogue. Figures are only available for M2 modules: they are talking points about improvement, not a mark on your work."),
+ strengthsT:L("Vos points forts à mettre en avant","Your strengths to highlight"),
+
+ prepT:L("Préparez aussi ces trois réponses","Prepare these three answers too"),
+ prepNote:L("Le principe général, les six ILOs et la banque complète sont sur la page <a href=\"#/\">Général</a>.","The general principles, the six ILOs and the full question bank are on the <a href=\"#/\">General</a> page."),
+
+ main:L("principal","main"),secondary:L("secondaire","secondary"),
+ mapping:L("ILO en cours de rattachement","ILO mapping in progress"),
+ dRole:L("Rôle","Role"),dEval:L("Évaluation","Assessment"),dRes:L("Résultats 2025-26","2025-26 results"),
+ grades:L("notes","grades"),avg:L("moyenne","average"),passTxt:L("à 10/20 ou plus","at 10/20 or above"),
+ prev:L("Précédent","Previous"),next:L("Suivant","Next"),
+
+ grpLbl:{g1:L("Groupe 1","Group 1"),g2:L("Groupe 2","Group 2"),tbc:L("Autres enseignants","Other faculty")}
+};
+
+/* ====== Données ====== */
+const ILOS=[
+ {n:1,key:"Data",name:"Digital & Data Intelligence",fr:"Choisir, mobiliser et évaluer de façon critique le numérique, les données et l'IA pour résoudre des problèmes de management, en mesurant leurs effets organisationnels, éthiques et sociétaux.",en:"Select, mobilise and critically evaluate digital technologies, data and AI-enabled tools to address complex managerial problems, while assessing their organisational, ethical and societal implications."},
+ {n:2,key:"Think",name:"Critical Thinking, Analysis & Innovation",fr:"Analyser des situations complexes, évaluer les preuves et les points de vue, et formuler des recommandations innovantes et fondées, avec des méthodes d'analyse et de recherche adaptées.",en:"Analyse complex managerial situations, evaluate evidence and alternative perspectives, and formulate innovative, well-founded recommendations using appropriate analytical and research methods."},
+ {n:3,key:"Value",name:"Strategic & Sustainable Value Creation",fr:"Analyser des environnements internationaux et changeants, formuler des options stratégiques et concevoir des solutions qui créent une valeur durable pour l'organisation et ses parties prenantes.",en:"Analyse international and changing business environments, formulate strategic options and design solutions that create sustainable value for organisations and their stakeholders."},
+ {n:4,key:"Transform",name:"Transformation, Project & Change Leadership",fr:"Concevoir et conduire des projets de transformation complexes en intégrant les dimensions stratégiques, technologiques, organisationnelles et humaines. C'est l'ILO qui porte le profil manager-ingénieur.",en:"Design and contribute to the implementation of complex organisational transformation projects by integrating strategic, technological, organisational and human dimensions and coordinating diverse stakeholders."},
+ {n:5,key:"Communicate",name:"Global Communication & Responsible Collaboration",fr:"Communiquer et défendre analyses et décisions dans des environnements professionnels et multiculturels, et collaborer de façon constructive.",en:"Communicate and defend analyses, recommendations and decisions effectively in professional and multicultural environments, and collaborate constructively with diverse stakeholders."},
+ {n:6,key:"Lead",name:"Responsible Leadership & Professional Development",fr:"Exercer un leadership éthique, inclusif et responsable, un jugement professionnel solide, et continuer à se développer face aux évolutions professionnelles, sociétales et technologiques.",en:"Demonstrate ethical, inclusive and responsible leadership, exercise sound professional judgement, and continuously develop their capabilities in response to changing professional, societal and technological environments."}
+];
+const AOL=[[1,23,713,94.7],[2,16,625,95.8],[3,16,455,95.2],[4,14,422,96.0],[5,2,82,95.1],[6,5,224,97.3]];
+
+const STEPS=[
+ {t:L("Partir de la mission et du positionnement","Start from the mission and positioning"),g:L("On définit le profil de sortie à partir de la mission de l'école et des attentes du marché.","The graduate profile is defined from the school's mission and the expectations of the job market."),c:L("Positionnement manager-ingénieur, au croisement du management, de l'intelligence numérique et de la responsabilité (ERS), appuyé sur l'Institut Mines-Télécom.","Manager-engineer positioning, at the crossroads of management, digital intelligence and responsibility (ERS), backed by Institut Mines-Télécom."),todo:null},
+ {t:L("Consulter les parties prenantes","Consult stakeholders"),g:L("Entreprises, alumni, étudiant·es et partenaires académiques donnent leur avis sur les compétences attendues.","Companies, alumni, students and academic partners give their views on the expected skills."),c:L("Advisory Board (deux fois par an), Corporate Steering Committees de chaque majeure (une fois par an), International Advisory Board.","Advisory Board (twice a year), Corporate Steering Committees for each major (once a year), International Advisory Board."),todo:null},
+ {t:L("Rédiger les ILOs avec les enseignant·es","Write the ILOs with faculty"),g:L("Un groupe de travail rédige 5 à 8 résultats d'apprentissage mesurables, discutés dans les départements.","A working group drafts 5 to 8 measurable learning outcomes, discussed in the departments."),c:L("Présentation de la logique compétences dans les académies de département.","Presentation of the competency approach in the departmental academies."),todo:null},
+ {t:L("Valider en instance","Validate in a governing body"),g:L("Les ILOs sont adoptés par les instances pédagogiques du programme.","The ILOs are adopted by the programme's pedagogical bodies."),c:L("Teaching and Learning Committee et comité Assurance of Learning (chacun deux fois par an), Training and Pedagogy Committee.","Teaching and Learning Committee and Assurance of Learning committee (each twice a year), Training and Pedagogy Committee."),todo:null},
+ {t:L("Cartographier les cours","Map the courses"),g:L("Chaque cours est rattaché aux ILOs dans une matrice (curriculum map) pour vérifier que tout ILO est couvert et travaillé de façon progressive.","Each course is linked to the ILOs in a matrix (curriculum map) to check that every ILO is covered and developed progressively."),c:L("Tableau de correspondance blocs RNCP, MAC, cours et ILO, avec un ILO principal et parfois un ILO secondaire par cours.","Mapping table of RNCP blocks, MACs, courses and ILOs, with a main ILO and sometimes a secondary ILO per course."),todo:null},
+ {t:L("Aligner les syllabus","Align the syllabi"),g:L("Les enseignant·es réécrivent objectifs, contenus et évaluations en cohérence avec les ILOs.","Faculty rewrite objectives, content and assessments consistently with the ILOs."),c:L("Refonte des syllabus accompagnée : permanences de Maud, appui de l'équipe pédagogique. Les syllabus indiquent les compétences visées.","Supported syllabus overhaul: Maud's drop-in sessions, support from the pedagogical team. Syllabi state the targeted competencies."),todo:null},
+ {t:L("Mesurer, analyser, améliorer","Measure, analyse, improve"),g:L("On choisit des preuves directes, on fixe des cibles, on analyse chaque année et on agit.","Direct evidence is chosen, targets are set, results are analysed every year and acted upon."),c:L("Calcul de l'atteinte des ILOs sur l'année de référence 2025-26 ; Academic Day sur l'évaluation à l'ère de l'IA ; Faculty Day pour partager les pratiques.","Calculation of ILO attainment for the 2025-26 reference year; Academic Day on assessment in the age of AI; Faculty Day to share practices."),todo:null}
+];
+
+const CORE=[
+ {q:"How were you involved in defining the ILOs?",fr:"Comment avez-vous été associé·e à la démarche ?",
+  a:[L("Les académies de département où la logique compétences a été présentée.","The departmental academies where the competency approach was presented."),L("La refonte de votre syllabus, avec l'appui de l'équipe pédagogique (permanences).","The overhaul of your syllabus, with support from the pedagogical team (drop-in sessions)."),L("L'Academic Day et le Faculty Day : on y a repensé l'évaluation, notamment face à l'IA.","The Academic Day and Faculty Day: we rethought assessment there, notably in the face of AI."),L("Les comités où les résultats remontent (Teaching and Learning, AoL).","The committees where results are reported (Teaching and Learning, AoL).")],
+  en:"“I took part in the department sessions where the competency framework was presented, and I rewrote my syllabus to link my course to the competencies and to an ILO. We also worked together on assessment during the Academic Day.”"},
+ {q:"What is an ILO for you? How many are there?",fr:"Pour vous, qu'est-ce qu'un ILO ? Combien y en a-t-il ?",
+  a:[L("Ce que nos diplômé·es savent faire à la fin du programme, mesurable.","What our graduates can do at the end of the programme, measurable."),L("Six ILOs : Data, Think, Value, Transform, Communicate, Lead.","Six ILOs: Data, Think, Value, Transform, Communicate, Lead."),L("Distinct des blocs RNCP, qui servent à certifier le diplôme.","Distinct from the RNCP blocks, which are used to certify the degree.")],
+  en:"“An ILO is what our graduates are able to do at the end of the programme, and we can measure it. We have six: digital and data intelligence, critical thinking, sustainable value creation, transformation, global communication and responsible leadership.”"},
+ {q:"Which ILO does your course contribute to?",fr:"À quel ILO votre cours contribue-t-il ?",
+  a:[L("Citez l'ILO principal de votre cours, puis le secondaire s'il y en a un.","Name your course's main ILO, then the secondary one if any."),L("Donnez une activité concrète du cours qui travaille cet ILO.","Give a concrete activity from the course that develops this ILO."),L("Voir votre page personnelle.","See your personal page.")],
+  en:"“My course mainly contributes to ILO …, because students …”"},
+ {q:"How do you assess it, and how do students get feedback?",fr:"Comment l'évaluez-vous et quels retours font les étudiant·es ?",
+  a:[L("Les épreuves et leur poids, tels qu'ils figurent dans le syllabus.","The assessments and their weighting, as stated in the syllabus."),L("Les critères ou la grille utilisés, et comment vous assurez l'équité entre groupes.","The criteria or rubric used, and how you ensure fairness between groups."),L("Le délai et la forme des retours (corrigés, commentaires sur Moodle, oral).","The timing and form of feedback (marked work, comments on Moodle, oral)."),L("Ce qui est prévu en cas d'échec avant le rattrapage.","What is planned for students who fail before the resit.")],
+  en:"“Students are assessed through …. They get written feedback on Moodle within … weeks, and we debrief the case in class.”"},
+ {q:"Can you give an example of a change you made after looking at results?",fr:"Avez-vous un exemple de changement fait à partir des résultats ?",
+  a:[L("Le constat : notes, répartition, évaluations des étudiant·es, retours d'entreprises.","The observation: grades, distribution, student evaluations, feedback from companies."),L("Ce que vous avez changé : méthode, évaluation, contenu, accompagnement.","What you changed: method, assessment, content, support."),L("Comment vous saurez si ça a marché : la prochaine mesure.","How you will know whether it worked: the next measurement.")],
+  en:"“Last year I noticed that …. So I changed …. We will check the effect with this year's results.”"},
+ {q:"How do you know the ILO is achieved, beyond your own grades?",fr:"Comment savez-vous que l'ILO est atteint, au-delà de vos notes ?",
+  a:[L("L'ILO se mesure sur plusieurs cours et sur toute la cohorte.","An ILO is measured across several courses and the whole cohort."),L("Résultats 2025-26 : les six ILOs dépassent la cible de 80 %.","2025-26 results: all six ILOs exceed the 80% target."),L("La mesure s'affine en 2026-27 avec un niveau attendu (12/20 ou grille).","Measurement is being refined in 2026-27 with an expected level (12/20 or rubric).")],
+  en:"“My grade tells me if a student passed my course. The ILO is measured across all the courses mapped to it, for the whole cohort, and the AoL Committee analyses the results every year.”"}
+];
+
+const BANK=[
+ {t:L("1. Connaissance du programme et des ILOs","1. Knowledge of the programme and the ILOs"),look:L("Que les enseignant·es connaissent les six ILOs et les citent spontanément, pas seulement la direction du programme.","That faculty know the six ILOs and quote them unprompted, not just programme management."),q:["What are the Programme's intended learning outcomes, and which of them does your course contribute to?","How does your course fit into the progression from L3 to M1 to M2? What do students know before and after it?","How were you involved in designing the new curriculum and the six ILOs that take effect in 2026-27?","How does the Manager-Engineer positioning of IMT-BS show in what you teach?"]},
+ {t:L("2. Assurance of Learning","2. Assurance of Learning"),look:L("Que la boucle « définir, mesurer, analyser, améliorer, re-mesurer » soit connue des enseignant·es, et pas seulement documentée. Chacun·e cite un exemple concret.","That the “define, measure, analyse, improve, re-measure” loop is known by faculty, not only documented. Everyone gives a concrete example."),q:["How do you assess whether students have achieved the ILO your course contributes to?","What is the difference between the assessment you use for grading and the one used for AoL purposes?","Have you ever received AoL results? What did you do with them?","Can you give an example of a change you made to your course following a gap identified?","Who decides what changes, and how do you learn about the outcome of the change?"]},
+ {t:L("3. Closing the loop (exemple DDDM)","3. Closing the loop (DDDM example)"),look:L("Un exemple complet : ce qui a déclenché le changement, ce qui a changé, comment on mesure l'effet.","A complete example: what triggered the change, what changed, how the effect is measured."),q:["(To DDDM faculty) What triggered the redesign, and what exactly changed in your courses?","How did you take into account the professionals' focus group of 30 March 2026?","How will you know whether the changes worked?"]},
+ {t:L("4. Évaluations par les étudiant·es","4. Student evaluations"),look:L("Que les retours des étudiant·es servent vraiment, et qu'il existe un suivi quand un cours est mal évalué.","That student feedback is genuinely used, and that there is follow-up when a course is poorly rated."),q:["How do you receive and use student evaluations?","What did you change in your course after a negative or critical comment?","What happens if a course is repeatedly poorly rated? Who intervenes?","Are you aware of the revised module survey? Do you think it gives you better information?"]},
+ {t:L("5. Pédagogie, innovation et numérique","5. Pedagogy, innovation and digital"),look:L("Des choix pédagogiques réfléchis, une place claire pour l'IA et le numérique, et un appui identifié (PracTice).","Thoughtful pedagogical choices, a clear place for AI and digital, and an identified source of support (PracTice)."),q:["How do you choose your teaching methods (cases, projects, simulations, flipped classroom)?","How do you integrate AI, data and digital tools into your teaching? How do you manage students' use of generative AI in assignments?","What support do you receive from PracTice for digital or blended teaching?","How do you manage academic integrity (plagiarism, AI-generated work)?"]},
+ {t:L("6. Évaluation des étudiant·es","6. Student assessment"),look:L("Des évaluations alignées sur les objectifs, équitables entre groupes, avec des retours rapides.","Assessments aligned with objectives, fair across groups, with quick feedback."),q:["How do you design assessments, and how do you make sure they match the course objectives?","Is grading consistent between several markers or groups? How do you ensure fairness (second marking, rubrics, juries)?","What feedback do students get, and how fast?","What happens to students who fail? What support is offered before the resit?"]},
+ {t:L("7. Lien avec le monde professionnel","7. Link with the professional world"),look:L("Des praticien·nes dans les cours et des retours d'entreprises qui font évoluer l'enseignement.","Practitioners in the courses and company feedback that shapes teaching."),q:["How do you keep your teaching up to date with practice? What role do practitioners play in your course?","Do you work with companies (projects, case studies)? Do you contribute to the Corporate Steering Committees?","How do you integrate feedback from internships, apprenticeships or employers?"]},
+ {t:L("8. Recherche et profil académique","8. Research and academic profile"),look:L("Une recherche qui nourrit l'enseignement et un soutien de l'école.","Research that feeds teaching and support from the school."),q:["What is your research activity, and how does it feed your teaching?","How are you supported by the School for research and publication (Faculty Charter, points-based system)?","How do you stay current in your discipline, and what development opportunities do you receive?"]},
+ {t:L("9. International, ERS et inclusion","9. International, ERS and inclusion"),look:L("Une perspective internationale dans les contenus, et l'éthique et la durabilité intégrées et évaluées.","An international perspective in the content, and ethics and sustainability integrated and assessed."),q:["How do you integrate an international perspective and international case material into your course?","How do you adapt teaching to a more international and diverse cohort?","How are ethics, responsibility and sustainability (ERS) integrated into your course, and how are they assessed?","How does the School support inclusion and students with specific needs?"]},
+ {t:L("10. Gouvernance, équipe et ressources","10. Governance, team and resources"),look:L("Des enseignant·es qui peuvent peser sur les décisions et qui disposent des ressources nécessaires.","Faculty who can influence decisions and have the resources they need."),q:["How are teaching decisions made, and how can you influence them? Which committees do you take part in?","How are teaching workload, adjunct faculty and teaching quality managed?","How are adjunct faculty briefed on the ILOs and assessment standards?","What resources (platforms, library, support staff) do you need and do you have?"]}
+];
+
+/* Panélistes : cours d'après « Liste modules EFMD-2 », ILO d'après la correspondance, évaluation d'après le catalogue PGE 2025-26, chiffres d'après ILO Achievement 2025-26 (M2 uniquement). */
+const CO=L("Coordinateur","Course coordinator"),COF=L("Coordinatrice","Course coordinator");
+const PROFS=[
+ {id:"lefrere",name:"Vincent Lefrère",title:"Full Professor",dept:"DEFI",grp:"g1",
+  courses:[
+   {code:"INF 4002",t:L("Initiation à la programmation pour futurs managers","Introduction to programming for future managers"),lvl:"M1 FR (S1)",role:CO,ilo:[2],sec:[1],st:"jumeau",ev:L("Rapport de groupe sur données réelles (notebook Jupyter) 50 %, soutenance 50 %. Examen sur table possible. Rattrapage : rapport individuel et oral.","Group report on real data (Jupyter notebook) 50%, oral defence 50%. Written exam possible. Resit: individual report and oral.")},
+   {code:"INF 4602",t:L("Initiation à la programmation pour futurs managers","Introduction to programming for future managers"),lvl:"M1 APP",role:CO,ilo:[2],sec:[1],st:"propose",ev:L("Rapport individuel sur un jeu de données lié à l'alternance 50 %, soutenance 50 %.","Individual report on a dataset linked to the work-study placement 50%, oral defence 50%.")},
+   {code:"FIN 6207",t:"Python for Data Analysis",lvl:"M2 majeure DSF",role:CO,ilo:[1],sec:[],st:"propose",ev:L("Interrogations et note de suivi sur 5, projet sur 15. Rattrapage : projet ajusté et soutenance.","Quizzes and a continuous-assessment mark out of 5, project out of 15. Resit: adjusted project and oral defence."),fig:{n:11,mean:11.3,pass:82}}],
+  points:[L("FIN 6207 est cité comme preuve directe de l'ILO 1 dans la proposition d'objectifs de l'équipe AoL : il sera regardé de près.","FIN 6207 is cited as direct evidence of ILO 1 in the AoL team's proposed objectives: it will be looked at closely."),L("82 % de réussite en FIN 6207, juste au-dessus du seuil de 80 % : c'est un bon support pour parler d'amélioration continue (qu'avez-vous observé, que changez-vous ?).","82% pass rate in FIN 6207, just above the 80% threshold: a good basis to talk about continuous improvement (what did you observe, what are you changing?)."),L("En apprentissage, le jeu de données vient de l'entreprise de l'apprenti·e : un exemple direct de lien avec le monde professionnel.","In the apprenticeship track, the dataset comes from the apprentice's company: a direct example of a link with the professional world.")],
+  check:[],
+  pitch:"“I teach programming and data analysis with Python. My courses contribute to ILO 1, Digital & Data Intelligence, and ILO 2, Critical Thinking: students analyse a real dataset in a notebook and defend their results orally. Apprentices work on data from their own company.”"},
+ {id:"bauer",name:"Anahid Bauer",title:"",dept:"",grp:"tbc",
+  courses:[
+   {code:"MIS 3402",t:"Introduction to data science",lvl:"Pré-Master EN (L3)",role:COF,ilo:[1],sec:[],st:"propose",ev:L("Contrôle continu (3 devoirs et rapport de TP) 30 %, rapport écrit 50 %, présentation en binôme 20 %. Rattrapage : rapport individuel.","Continuous assessment (3 assignments and a lab report) 30%, written report 50%, pair presentation 20%. Resit: individual report.")},
+   {code:"MIS 4404",t:"Artificial Intelligence and Data Science",lvl:"M1 EN",role:COF,ilo:[1],sec:[3],st:"propose",ev:L("Projet écrit 75 %, présentation 25 %. Rattrapage : nouveau projet écrit.","Written project 75%, presentation 25%. Resit: new written project.")},
+   {code:"INF 4402",t:"Introduction to programming for future managers",lvl:"M1 EN",role:COF,ilo:[1],sec:[],st:"propose",ev:L("Contrôle continu (3 devoirs et TD) 75 %, examen final sur papier 25 %.","Continuous assessment (3 assignments and tutorials) 75%, final paper exam 25%.")},
+   {code:"STR 4804",t:"Digital Strategy",lvl:"M1 EN",role:L("Intervenante (coordination : Muge Gossart Ozman)","Teaching (coordinated by Muge Gossart Ozman)"),ilo:[3],sec:[1],st:"propose",ev:L("Le syllabus ne donne pas la répartition des notes. Sur Moodle en 2025-26 : 19 devoirs (345 dépôts) et 16 tests (336 tentatives).","The syllabus does not give the breakdown of marks. On Moodle in 2025-26: 19 assignments (345 submissions) and 16 quizzes (336 attempts).")}],
+  points:[L("Vos cours dessinent une progression sur l'ILO 1, de la L3 (Introduction to data science) au M1 (AI and Data Science) : réponse toute trouvée à la question sur la progression L3, M1, M2.","Your courses form a progression on ILO 1, from L3 (Introduction to data science) to M1 (AI and Data Science): a ready-made answer to the question on progression from L3 to M1 to M2."),L("Les projets écrits et présentations de MIS 4404 sont des preuves directes de l'ILO 1 faciles à montrer.","The written projects and presentations in MIS 4404 are direct evidence of ILO 1 that is easy to show.")],
+  check:[],
+  pitch:"“I teach data science and AI, from the pre-master to the first year of the master. My courses contribute to ILO 1, Digital & Data Intelligence. Students start with R and Python on simple datasets and end with a full AI project they present to the class.”"},
+ {id:"rana",name:"Shraddha Rana",title:"Associate Professor",dept:"MMS",grp:"g1",
+  courses:[
+   {code:"MKT 4402",t:"International Business",lvl:"M1 EN",role:COF,ilo:[1],sec:[3],st:"propose",ev:L("Devoirs 25 %, participation 25 %, examen oral final 50 %.","Assignments 25%, participation 25%, final oral exam 50%.")}],
+  points:[L("Votre examen oral final est une preuve directe de communication en contexte international. L'ILO 5 ne repose aujourd'hui que sur 2 modules : votre cours peut renforcer cette base.","Your final oral exam is direct evidence of communication in an international context. ILO 5 currently rests on only 2 modules: your course can strengthen that base."),L("Thème 9 de la banque (perspective internationale, cohortes diverses) : préparez un cas international que vous utilisez.","Theme 9 of the question bank (international perspective, diverse cohorts): prepare an international case that you use.")],
+  check:[],
+  pitch:"“I teach International Business in the first year of the master, in English. The course contributes to strategic and sustainable value creation, ILO 3, and to global communication, ILO 5: half of the grade is a final oral exam where students defend an analysis of an international market.”"},
+ {id:"basile",name:"Luigi Basile",title:"Associate Professor",dept:"MMS",grp:"g1",
+  courses:[
+   {code:"STR 4402",t:"Business Intelligence",lvl:"M1 EN",role:CO,ilo:[1],sec:[],st:"propose",ev:L("Contrôle continu 40 % (cas et exercices 20 %, projet final 20 %), examen écrit 60 %.","Continuous assessment 40% (cases and exercises 20%, final project 20%), written exam 60%.")},
+   {code:"MAN 4402",t:"Risk Management",lvl:"M1 EN",role:CO,ilo:[3],sec:[],st:"propose",ev:L("Contrôle continu 30 % (cas et exercices 20 %, présence 10 %), examen écrit 70 % sur l'application à des situations réelles. Rattrapage écrit.","Continuous assessment 30% (cases and exercises 20%, attendance 10%), written exam 70% on application to real situations. Written resit.")},
+   {code:"STR 4405",t:"Innovation and Quality Management",lvl:"M1 EN",role:L("Intervenant (coordination : Benoît Tézenas du Montcel)","Teaching (coordinated by Benoît Tézenas du Montcel)"),ilo:[4],sec:[3],st:"propose",ev:L("Contrôle continu varié (connaissances, cas, quiz, projet de groupe, participation), au moins 60 % de la note en individuel.","Varied continuous assessment (knowledge, cases, quizzes, group project, participation), at least 60% of the grade individual.")}],
+  points:[L("Trois cours, trois ILOs (1, 3 et 4) : vous pouvez montrer que vous savez où chacun se place.","Three courses, three ILOs (1, 3 and 4): you can show that you know where each one fits."),L("Les liens entre risques technologiques, sociaux et environnementaux dans Risk Management répondent aux questions ERS (thème 9).","The links between technological, social and environmental risks in Risk Management answer the ERS questions (theme 9).")],
+  check:[],
+  pitch:"“I teach Business Intelligence and Risk Management in the first year of the master. Business Intelligence contributes to ILO 1, data intelligence; Risk Management to ILO 3, sustainable value creation. In both, case studies prepare students for a final exam where they apply the tools to real situations.”"},
+ {id:"moriceau",name:"Jean-Luc Moriceau",title:"Full Professor",dept:"DEFI",grp:"g1",
+  courses:[
+   {code:"ACC 4004",t:L("Pilotage de la performance","Performance management"),lvl:"M1 FR (S1)",role:CO,ilo:[3],sec:[],st:"jumeau",ev:L("Exercices individuels en classe 70 %, dossier de recherche en groupe de 3 30 %. Rattrapage : CF2, ou oral si moins de 4 étudiant·es.","Individual in-class exercises 70%, group research file (groups of 3) 30%. Resit: CF2, or oral if fewer than 4 students.")},
+   {code:"RES 4401",t:"Research Methodology",lvl:"M1 EN",role:CO,ilo:[2],sec:[],st:"propose",ev:L("Travail continu en groupe de 3 (problématique et revue de littérature construites séance après séance) 75 %, examen individuel 25 %.","Continuous group work in groups of 3 (research question and literature review built session after session) 75%, individual exam 25%.")},
+   {code:"ACC 4604",t:L("Pilotage de la performance","Performance management"),lvl:"M1 APP",role:CO,ilo:[3],sec:[1],st:"propose",ev:L("Exercices individuels en classe 70 %, devoir sur table 30 %.","Individual in-class exercises 70%, written test 30%.")}],
+  points:[L("Research Methodology prépare le mémoire, présenté comme la preuve principale de l'ILO 2 : vous êtes bien placé pour expliquer comment on construit l'esprit critique.","Research Methodology prepares the thesis, presented as the main evidence of ILO 2: you are well placed to explain how critical thinking is built."),L("Le travail progressif de RES 4401 est un bon exemple de retours réguliers aux étudiant·es (thème 6).","The progressive work in RES 4401 is a good example of regular feedback to students (theme 6).")],
+  check:[],
+  pitch:"“I teach Research Methodology and performance management. Research Methodology contributes to ILO 2, critical thinking: in groups of three, students build a research question and a literature review step by step, with feedback at every session. It prepares them for the master's thesis.”"},
+ {id:"stourm",name:"Ludovic Stourm",title:"Full Professor",dept:"MMS",grp:"g2",
+  courses:[
+   {code:"MKT 3401",t:"Fundamentals of Marketing",lvl:"Pré-Master EN (L3)",role:CO,ilo:[3],sec:[],st:"propose",ev:L("Participation 10 %, quiz 10 %, projet de groupe 30 %, examen final 50 %.","Participation 10%, quizzes 10%, group project 30%, final exam 50%.")},
+   {code:"MKT 3405",t:"Market Research",lvl:"Pré-Master EN (L3)",role:CO,ilo:[2],sec:[1],st:"propose",ev:L("Participation 10 %, projet d'étude de marché 40 %, examen final 50 %. Rattrapage oral.","Participation 10%, market research project 40%, final exam 50%. Oral resit.")},
+   {code:"MKT 3005",t:L("Études de marché","Market research"),lvl:"Pré-Master FR (L3)",role:CO,ilo:[2],sec:[1],st:"propose",ev:L("Examen écrit 40 %, projet 60 %.","Written exam 40%, project 60%.")},
+   {code:"QUA 5751",t:L("Analyse de données et méthodes quantitatives","Data analysis and quantitative methods"),lvl:"M2 majeure BDIC",role:CO,ilo:[2],sec:[1],st:"propose",ev:L("Quiz 10 %, participation 10 %, projet de groupe 40 %, examen final 40 %.","Quizzes 10%, participation 10%, group project 40%, final exam 40%."),fig:{n:50,mean:13.2,pass:98}},
+   {code:"MKT 6439",t:"Marketing-data analytics",lvl:"M2 majeure DDDM",role:L("Co-coordinateur avec Olivier Segard","Co-coordinator with Olivier Segard"),ilo:[],sec:[],st:"absent",ev:L("Participation 10 %, quiz 10 %, projet de groupe 30 %, examen final 50 %. Rattrapage : oral de 30 minutes.","Participation 10%, quizzes 10%, group project 30%, final exam 50%. Resit: 30-minute oral."),fig:{n:14,mean:13.0,pass:93}}],
+  points:[L("La question sur la refonte DDDM (thème 3) a de bonnes chances de vous être posée : préparez ce qui a déclenché la refonte, ce qui a changé et comment l'effet sera mesuré.","The question on the DDDM redesign (theme 3) is likely to be put to you: prepare what triggered the redesign, what changed and how the effect will be measured."),L("Vos cours vont de la L3 au M2 avec une structure d'évaluation stable (projet et examen) : un bon exemple de progression et de cohérence.","Your courses run from L3 to M2 with a stable assessment structure (project and exam): a good example of progression and consistency.")],
+  check:[],
+  pitch:"“I teach marketing and data analysis, from the pre-master to the DDDM major. Market research and quantitative methods contribute to ILO 2, critical thinking and analysis: students run a real market study or a data project in groups, then sit an individual exam. In DDDM we redesigned the courses after a focus group with professionals.”"},
+ {id:"schafer",name:"Maximilian Schäfer",title:"Associate Professor",dept:"DEFI",grp:"g2",
+  courses:[
+   {code:"INF 4803",t:L("Intelligence artificielle et data science","Artificial intelligence and data science"),lvl:"M1 FR (S1)",role:L("Co-coordinateur avec Nicolas Soulié","Co-coordinator with Nicolas Soulié"),ilo:[1],sec:[],st:"jumeau",ev:L("Deux dossiers de codage en groupe 65 %, QCM avec exercice de codage 35 % (non annoncés).","Two group coding assignments 65%, multiple-choice quiz with a coding exercise 35% (unannounced).")},
+   {code:"ECO 4001",t:L("Économie managériale, données et protection de la vie privée","Managerial economics, data and privacy"),lvl:"M1 FR (S1)",role:CO,ilo:[2],sec:[],st:"propose",ev:L("QCM de contrôle continu 25 %, contrôle final 75 % (tarification optimale, théorie des jeux, enchères).","Continuous-assessment quizzes 25%, final exam 75% (optimal pricing, game theory, auctions).")},
+   {code:"INF 4603",t:L("Intelligence artificielle et data science","Artificial intelligence and data science"),lvl:"M1 APP",role:CO,ilo:[1],sec:[],st:"propose",ev:L("Mêmes modalités que INF 4803.","Same arrangements as INF 4803.")},
+   {code:"ECO 4601",t:L("Économie managériale, données et protection de la vie privée","Managerial economics, data and privacy"),lvl:"M1 APP",role:CO,ilo:[2],sec:[],st:"jumeau",ev:L("Mêmes modalités que ECO 4001.","Same arrangements as ECO 4001.")}],
+  points:[L("Les QCM non annoncés avec exercice de codage sont une réponse concrète à la question de l'intégrité académique face à l'IA générative (thème 5).","Unannounced quizzes with a coding exercise are a concrete answer to the academic integrity question regarding generative AI (theme 5)."),L("La protection de la vie privée dans ECO 4001 touche directement l'éthique et la responsabilité (ERS).","Privacy protection in ECO 4001 bears directly on ethics and responsibility (ERS).")],
+  check:[],
+  pitch:"“I teach AI and data science, and managerial economics with a focus on data and privacy. The AI course contributes to ILO 1: students implement AI methods in group coding projects, and short unannounced quizzes with a coding exercise check that each student really understands the code.”"},
+ {id:"delaunay",name:"Anne-Laure Delaunay",title:"Associate Professor",dept:"TIM",grp:"g2",
+  courses:[
+   {code:"MIS 3001",t:L("Introduction au SI / Transformation digitale","Introduction to IS / Digital transformation"),lvl:"Pré-Master FR (L3)",role:COF,ilo:[4],sec:[1],st:"propose",ev:L("Contrôle continu (études de cas et QCM) 50 %, contrôle final 50 %. Rattrapage : CF2 à 100 %.","Continuous assessment (case studies and quizzes) 50%, final exam 50%. Resit: CF2 at 100%.")},
+   {code:"INF 3005",t:L("Les fondamentaux de l'IA","Fundamentals of AI"),lvl:"Pré-Master FR (L3)",role:L("Intervenante (coordination : Robert Voyer)","Teaching (coordinated by Robert Voyer)"),ilo:[2],sec:[1],st:"propose",ev:L("Une note individuelle, rattrapage individuel.","One individual mark, individual resit.")},
+   {code:"MIS 4002",t:L("Gestion de projet","Project management"),lvl:"M1 FR (S1)",role:L("Intervenante, co-responsable","Teaching, co-lead"),ilo:[4],sec:[3],st:"jumeau",ev:L("Format hybride avec SPOC : devoirs et évaluation par les pairs 35 %, contrôle final de 2 h (exercice et QCM) 65 %.","Hybrid format with SPOC: assignments and peer assessment 35%, 2-hour final test (exercise and MCQ) 65%.")},
+   {code:"MIS 5512",t:L("Management des projets SI et conduite du changement","IS project management and change leadership"),lvl:"M2 majeure MISI",role:L("Intervenante, co-responsable","Teaching, co-lead"),ilo:[4],sec:[3],st:"propose",ev:L("Oral sur étude de cas en groupe 40 %, travaux pratiques et examen individuel 60 % ; la conduite du changement compte pour un tiers.","Oral on a group case study 40%, practical work and individual exam 60%; change management counts for one third."),fig:{n:60,mean:17.0,pass:98}}],
+  points:[L("Vos cours montrent une progression complète sur l'ILO 4 (transformation), de la L3 au M2 : idéal pour la question sur la progression.","Your courses show a complete progression on ILO 4 (transformation), from L3 to M2: ideal for the progression question."),L("Gestion de projet est un cours vitrine sur Moodle (version APP : ChallengeMe, 26 tests, 2 353 tentatives) : un exemple fort pour le thème 5 et l'appui de PracTice.","Project management is a showcase course on Moodle (apprenticeship version: ChallengeMe, 26 quizzes, 2,353 attempts): a strong example for theme 5 and PracTice support."),L("Moyenne de 17/20 en MIS 5512 : on peut vous demander si l'évaluation distingue assez les niveaux. Préparez la réponse (grille, critères).","Average of 17/20 in MIS 5512: you may be asked whether the assessment distinguishes levels enough. Prepare your answer (rubric, criteria).")],
+  check:[],
+  pitch:"“I teach information systems and project management, from the pre-master to the MISI major. My courses build ILO 4, transformation and change leadership, step by step: case studies in the first year, a blended project-management course with an online module and peer assessment, then real change cases in the major.”"},
+ {id:"tezenas",name:"Benoît Tézenas du Montcel",title:"Associate Professor",dept:"MMS",grp:"g2",
+  courses:[
+   {code:"STR 4002",t:L("Management de l'innovation et de la qualité","Innovation and quality management"),lvl:"M1 FR (S1)",role:CO,ilo:[4],sec:[3],st:"jumeau",ev:L("Contrôle continu varié : connaissances, études de cas, quiz, projet de groupe sur une innovation, participation.","Varied continuous assessment: knowledge, case studies, quizzes, group project on an innovation, participation.")},
+   {code:"STR 4405",t:"Innovation and Quality Management",lvl:"M1 EN",role:CO,ilo:[4],sec:[3],st:"propose",ev:L("Mêmes modalités, au moins 60 % de la note en individuel.","Same arrangements, at least 60% of the grade individual.")},
+   {code:"STR 4602",t:L("Management de l'innovation et de la qualité","Innovation and quality management"),lvl:"M1 APP",role:CO,ilo:[4],sec:[3],st:"propose",ev:L("Mêmes modalités que STR 4002.","Same arrangements as STR 4002.")},
+   {code:"STR 5929",t:L("Industries X.0 (IA, robotique, santé, 3D)","Industries X.0 (AI, robotics, health, 3D)"),lvl:"M2 majeure MSET",role:L("Intervenant (co-coordination avec Xavier Parisot)","Teaching (co-coordinated with Xavier Parisot)"),ilo:[2],sec:[1],st:"propose",ev:L("Examen final individuel 60 % (questions de cours, mini étude de cas). Rattrapage plafonné à 10/20. Témoignages de dirigeant·es et visites d'entreprises.","Individual final exam 60% (course questions, mini case study). Resit capped at 10/20. Talks by company executives and company visits."),fig:{n:21,mean:11.7,pass:95}}],
+  points:[L("Le cours d'innovation existe en trois versions (FR, EN, APP) : vous pouvez expliquer comment vous gardez la même exigence pour les trois publics.","The innovation course exists in three versions (FR, EN, apprenticeship): you can explain how you keep the same standard for all three audiences."),L("Les témoignages de dirigeant·es et visites d'entreprises de Industries X.0 répondent au thème 7.","The executive talks and company visits in Industries X.0 answer theme 7."),L("Les capsules vidéo produites avec PracTice peuvent illustrer le thème 5 (innovation pédagogique).","The video capsules produced with PracTice can illustrate theme 5 (pedagogical innovation).")],
+  check:[],
+  pitch:"“I coordinate the innovation and quality management course, in French, in English and for apprentices. It contributes to ILO 4, transformation and change leadership: students run a group project on a real innovation or technology, and at least sixty percent of the grade is individual.”"},
+ {id:"liu",name:"Fufan Liu",title:"Associate Professor",dept:"TIM",grp:"g2",
+  courses:[
+   {code:"INF 3405",t:"Fundamentals of AI",lvl:"Pré-Master EN (L3)",role:CO,ilo:[1],sec:[],st:"propose",ev:L("Quatre projets pratiques de difficulté croissante, 25 % chacun. Écrit possible en cas de lacunes conceptuelles.","Four practical projects of increasing difficulty, 25% each. Written exam possible in case of conceptual gaps.")},
+   {code:"MIS 4403",t:"Cybersecurity and Sustainable IT",lvl:"M1 EN",role:CO,ilo:[1],sec:[3],st:"propose",ev:L("Projet de groupe 50 %, rapport sur un cas pratique 40 %, assiduité 10 %.","Group project 50%, report on a practical case 40%, attendance 10%.")},
+   {code:"MIS 4406",t:"AI Builders",lvl:"M1 EN (nouveau)",role:CO,ilo:[],sec:[],st:"absent",ev:L("3 à 5 projets de groupe et individuels avec démonstration (80 à 100 %), écrit possible (0 à 20 %).","3 to 5 group and individual projects with demonstration (80 to 100%), written exam possible (0 to 20%).")},
+   {code:"MIS 5208",t:"Cyber risk and cybersecurity",lvl:"M2 majeure DMDT",role:CO,ilo:[1],sec:[4],st:"propose",ev:L("Projet de groupe 60 %, exploration individuelle 20 %, exercice de simulation de crise en classe 20 %.","Group project 60%, individual exploration 20%, in-class crisis simulation exercise 20%."),fig:{n:22,mean:14.8,pass:95}},
+   {code:"MIS 5448",t:L("Sécurité des SI, cybersécurité et risques","IS security, cybersecurity and risks"),lvl:"M2 majeure ACSI",role:L("Co-coordinateur avec Nabyla Daidj","Co-coordinator with Nabyla Daidj"),ilo:[1],sec:[],st:"propose",ev:L("Présence et participation 20 %, exercices 30 %, cas de gestion de crise cyber (livrables et soutenance) 50 %.","Attendance and participation 20%, exercises 30%, cyber crisis management case (deliverables and defence) 50%."),fig:{n:32,mean:11.3,pass:97}},
+   {code:"MIS 5517",t:"IT risk & Cybersecurity",lvl:"M2 majeure MISI",role:L("Intervenant, co-responsable","Teaching, co-lead"),ilo:[1],sec:[],st:"propose",ev:L("Contrôle sur table individuel 50 %, projet de groupe 50 %.","Individual written test 50%, group project 50%."),fig:{n:60,mean:16.4,pass:98}}],
+  points:[L("Six cours sur l'ILO 1, de la L3 au M2 : vous êtes le témoin idéal de la progression numérique du programme.","Six courses on ILO 1, from L3 to M2: you are the ideal witness of the programme's digital progression."),L("Les simulations de crise cyber sont des preuves directes très parlantes (mise en situation professionnelle).","Cyber-crisis simulations are very telling direct evidence (professional role-play)."),L("AI Builders répond directement à la question sur l'IA dans l'enseignement (thème 5).","AI Builders directly answers the question on AI in teaching (theme 5).")],
+  check:[],
+  pitch:"“I teach AI and cybersecurity, from the pre-master to three majors. All my courses contribute to ILO 1, Digital & Data Intelligence. Students learn by building: AI projects with live demos, and cyber-crisis simulations where they must decide and communicate under pressure.”"}
+];
+
+/* ====== Rendu ====== */
+const chipIlo=(n,sec)=>`<span class="chip v${sec?" sec":""}" style="--c:var(--i${n})">ILO ${n} ${sec?t(U.secondary):t(U.main)}</span>`;
+const chipKey=n=>`<span class="chip v" style="--c:var(--i${n})">ILO ${n} · ${ILOS[n-1].key}</span>`;
+const say=(txt,lbl)=>`<div class="say"><div class="lbl">${t(lbl||U.sayLbl)}</div><p lang="en">${txt}</p></div>`;
+const todo=txt=>`<div class="todo int">${t(txt)}</div>`;
+const lvlT=s=>lang==="fr"?frTypo(s):s.replace("Pré-Master","Pre-Master").replace("majeure","major").replace("(nouveau)","(new)").replace(/\bAPP\b/,"apprenticeship");
+const initials=n=>n.split(/\s+/).filter(Boolean).map((w,i,a)=>(i===0||i===a.length-1)?w[0]:"").join("");
+const qaBlock=(c,lbl)=>`<details class="qa"><summary><span><span class="q" lang="en">${c.q}</span>${lang==="fr"?`<span class="qfr">${t(c.fr)}</span>`:""}</span></summary><div class="inner"><ul class="clean">${c.a.map(x=>`<li>${t(x)}</li>`).join("")}</ul>${say(c.en,lbl)}</div></details>`;
+
+function viewHome(){
+  return `
+  <section id="sec-dates">
+    <h2>${t(U.s1Title)}</h2>
+    <p class="lead">${t(U.s1p1)}</p>
+    <p>${t(U.s1p2)}</p>
+    <div class="two">
+      <div class="box"><div class="lbl">${t(U.mockLbl)}</div><h3>${t(U.mockT)}</h3><p class="small">${t(U.mockP)}</p></div>
+      <div class="box"><div class="lbl">${t(U.prvLbl)}</div><h3>${t(U.prvT)}</h3><p class="small">${t(U.prvP)}</p></div>
+    </div>
+  </section>
+
+  <section id="ilos">
+    <h2>${t(U.s2Title)}</h2>
+    <p>${t(U.s2p)}</p>
+    <div class="ilos">${ILOS.map(i=>`<div class="ilo" style="--c:var(--i${i.n})"><div class="num">ILO ${i.n}</div><div class="key">${i.key}</div><div class="name">${i.name}</div>${lang==="fr"?`<div class="fr">${t(i.fr)}</div><div class="en sub" lang="en">${i.en}</div>`:`<div class="en" lang="en">${i.en}</div>`}</div>`).join("")}</div>
+    ${say(t(U.s2say))}
+  </section>
+
+  <section id="blocs">
+    <h2>${t(U.s3Title)}</h2>
+    <p>${t(U.s3p)}</p>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>${t(U.thBlocks)}</th><th>ILOs</th></tr></thead>
+      <tbody>${U.rows.map(r=>`<tr><td><b>${t(r[0])}</b></td><td>${t(r[1])}</td><td>${t(r[2])}</td></tr>`).join("")}</tbody>
+    </table></div>
+    <h3>${t(U.s3h)}</h3>
+    <div class="flow">${U.flow.map((n,i)=>`<div class="node"><b>${t(n[0])}</b>${t(n[1])}</div>${i<U.flow.length-1?`<span class="arrow">${i===U.flow.length-2?"+":"→"}</span>`:""}`).join("")}</div>
+    <p>${t(U.s3p2)}</p>
+    ${say(t(U.s3say))}
+  </section>
+
+  <section id="construction">
+    <h2>${t(U.s4Title)}</h2>
+    <p>${t(U.s4p)}</p>
+    <div class="steps">${STEPS.map((s,i)=>`<div class="step"><div class="n">${i+1}</div><div class="body"><h3>${t(s.t)}</h3><p class="small muted">${t(s.g)}</p><p class="chez"><b>${t(U.here)}</b> ${t(s.c)}</p></div></div>`).join("")}</div>
+    ${say(t(U.s4say))}
+  </section>
+
+  <section id="boucle">
+    <h2>${t(U.s5Title)}</h2>
+    <p>${t(U.s5p)}</p>
+    <div class="loop">${U.loop.map(x=>`<div>${t(x)}</div>`).join("")}</div>
+    <p>${t(U.s5p2)}</p>
+    <h3>${t(U.s5h)}</h3>
+    <p class="small muted">${t(U.s5small)}</p>
+    <div class="tbl"><table>
+      <thead><tr><th>ILO</th><th class="num">${t(U.thMod)}</th><th class="num">${t(U.thGr)}</th><th class="num">${t(U.thPass)}</th><th>${t(U.thTarget)}</th></tr></thead>
+      <tbody>${AOL.map(([n,m,g,p])=>`<tr><td><b style="color:var(--i${n})">ILO ${n}</b> ${ILOS[n-1].name}${n===5?` <span class="chip warn">${t(U.narrow)}</span>`:""}</td><td class="num">${m}</td><td class="num">${g}</td><td class="num">${pct(p,1)}</td><td><span class="chip ok">${t(U.yes)}</span></td></tr>`).join("")}</tbody>
+    </table></div>
+    <p>${t(U.s5p3)}</p>
+    <h3>${t(U.s5ex)}</h3>
+    <ul class="clean"><li>${t(U.ex1)}</li><li>${t(U.ex2)}</li><li>${t(U.ex3)}</li></ul>
+  </section>
+
+  <section id="incontournables">
+    <h2>${t(U.s6Title)}</h2>
+    <p>${t(U.s6p)}</p>
+    <div class="qlist">${CORE.map(c=>qaBlock(c,U.exAnswer)).join("")}</div>
+  </section>
+
+  <section id="entrainement">
+    <h2>${t(U.s7Title)}</h2>
+    <p>${t(U.s7p)}</p>
+    <div class="drill">
+      <div class="lbl" id="drill-theme"></div>
+      <div class="cardq" id="drill-q" lang="en"></div>
+      <div id="drill-a" class="muted" hidden></div>
+      <div class="bar">
+        <button class="btn" id="drill-show" type="button">${t(U.dShow)}</button>
+        <button class="btn ghost" id="drill-next" type="button">${t(U.dNext)}</button>
+        <span class="small muted" id="drill-count"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="banque">
+    <h2>${t(U.s8Title)}</h2>
+    <p>${t(U.s8p)}</p>
+    <div class="qlist">${BANK.map(b=>`<details><summary>${t(b.t)}</summary><div class="inner"><ul class="clean" lang="en">${b.q.map(x=>`<li>${x}</li>`).join("")}</ul><p class="small"><b>${t(U.lookfor)}</b> ${t(b.look)}</p></div></details>`).join("")}</div>
+  </section>
+
+  <section id="regles">
+    <h2>${t(U.s9Title)}</h2>
+    <ul class="clean">${U.rules.map(r=>`<li>${t(r)}</li>`).join("")}</ul>
+  </section>
+
+  <div class="cta-box"><div><h3>${t(U.ctaBoxT)}</h3><p class="small">${t(U.ctaBoxP)}</p></div><a class="cta" href="#/panel">${t(U.ctaFind)}</a></div>`;
+}
+
+function heroHome(){
+  return `<h1>${t(U.homeTitle)}</h1><p>${t(U.homeLead)}</p>
+  <div class="hero-cta"><a class="cta solid" href="#/panel">${t(U.ctaFind)}</a><button class="cta line" type="button" data-scroll="sec-dates">${t(U.ctaRead)}</button></div>`;
+}
+
+function groupedProfs(){
+  return [["g1",PROFS.filter(p=>p.grp==="g1")],["g2",PROFS.filter(p=>p.grp==="g2")],["tbc",PROFS.filter(p=>p.grp==="tbc")]].filter(g=>g[1].length);
+}
+function cardsHtml(q){
+  const f=(q||"").trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  const out=groupedProfs().map(([g,list])=>{
+    const l=list.filter(p=>!f||p.name.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").includes(f));
+    if(!l.length)return"";
+    return `<div class="grp"><h3>${t(U.grpLbl[g])}</h3><div class="cards">${l.map(p=>{
+      const ilos=[...new Set(p.courses.flatMap(c=>c.ilo))].sort();
+      return `<a class="pcard" href="#/t/${p.id}"><div class="avatar" aria-hidden="true">${initials(p.name)}</div><div><div class="nm">${p.name}</div><div class="small muted">${[p.title,p.dept].filter(Boolean).join(" · ")} · ${t(U.nCourses(p.courses.length))}</div><div class="meta">${ilos.map(n=>`<span class="chip v" style="--c:var(--i${n})">ILO ${n}</span>`).join("")}</div></div></a>`}).join("")}</div></div>`;
+  }).join("");
+  return out||`<p class="muted">${t(U.none)}</p>`;
+}
+function viewPanel(){
+  return `<section class="finder">
+    <input type="search" id="finder-q" placeholder="${t(U.search)}" aria-label="${t(U.search)}"></section>
+    <div id="finder-out" style="display:grid;gap:28px">${cardsHtml("")}</div>`;
+}
+function heroPanel(){return `<h1>${t(U.findTitle)}</h1><p>${t(U.findLead)}</p>`}
+
+function viewProf(p){
+  const course=c=>{
+    const c0=c.ilo[0]||0;
+    return `<div class="course" style="--c:${c0?`var(--i${c0})`:"var(--line)"}"><div class="top"><span class="title">${t(c.t)}</span><span class="code">${c.code} · ${lvlT(c.lvl)}</span></div>
+    <div class="flow">${c.ilo.map(n=>chipIlo(n,false)).join("")}${c.sec.map(n=>chipIlo(n,true)).join("")}${c.st==="absent"?`<span class="chip s ext">${t(U.mapping)}</span>`:""}</div>
+    <dl><dt>${t(U.dRole)}</dt><dd>${t(c.role)}</dd><dt>${t(U.dEval)}</dt><dd>${t(c.ev)}</dd>${c.fig?`<dt>${t(U.dRes)}</dt><dd><span class="figs"><span>${c.fig.n} ${t(U.grades)}</span><span>${t(U.avg)} ${num(c.fig.mean,1)}/20</span><span>${pct(c.fig.pass)} ${t(U.passTxt)}</span></span></dd>`:""}</dl></div>`;
+  };
+  const prevI=(PROFS.indexOf(p)-1+PROFS.length)%PROFS.length,nextI=(PROFS.indexOf(p)+1)%PROFS.length;
+  return `
+  <section><h3>${t(U.pitchT)}</h3><p class="small muted">${t(U.pitchP)}</p>${say(p.pitch)}</section>
+  <section><h3>${t(U.coursesT)}</h3><p class="small muted">${t(U.coursesP)}</p><div class="course-list">${p.courses.map(course).join("")}</div></section>
+  <div class="two"><div class="box"><h3>${t(U.strengthsT)}</h3><ul class="clean">${p.points.map(x=>`<li>${t(x)}</li>`).join("")}</ul></div></div>
+  <section><h3>${t(U.prepT)}</h3><div class="qlist">${[CORE[0],CORE[3],CORE[4]].map(c=>qaBlock(c,U.outline)).join("")}</div><p class="small">${t(U.prepNote)}</p></section>
+  <nav class="pager" aria-label="${t(U.allTeachers)}"><a href="#/t/${PROFS[prevI].id}"><small>← ${t(U.prev)}</small>${PROFS[prevI].name}</a><a class="next" href="#/t/${PROFS[nextI].id}"><small>${t(U.next)} →</small>${PROFS[nextI].name}</a></nav>`;
+}
+function heroProf(p){
+  const ilos=[...new Set(p.courses.flatMap(c=>c.ilo))].sort();
+  return `<div class="crumb"><a href="#/panel">${t(U.allTeachers)}</a></div>
+   <div class="lbl" style="color:#fff;opacity:.9">${t(U.grpLbl[p.grp])}</div>
+   <h1>${p.name}</h1>
+   <div class="hero-meta">${p.title?`<span class="chip">${p.title}</span>`:""}${p.dept?`<span class="chip">${t(U.dept)} ${p.dept}</span>`:""}${ilos.map(n=>`<span class="chip">ILO ${n} · ${ILOS[n-1].key}</span>`).join("")}</div>
+   <div class="jump"><label for="jump">${t(U.switchTo)}</label><select id="jump">${PROFS.map(x=>`<option value="${x.id}"${x.id===p.id?" selected":""}>${x.name}</option>`).join("")}</select></div>`;
+}
+
+/* Navigation */
+let cur=location.hash;
+function go(h){cur=h;try{history.replaceState(null,"",h)}catch(e){}render(false)}
+function route(){
+  const h=cur.replace(/^#\/?/,"");
+  if(h==="panel")return{k:"panel"};
+  const m=h.match(/^t\/([\w-]+)/);
+  if(m){const p=PROFS.find(x=>x.id===m[1]);if(p)return{k:"prof",p}}
+  return{k:"home"};
+}
+let lastKey=null;
+function render(first){
+  const r=route();
+  document.documentElement.lang=lang;
+  $("#brand").textContent=t(U.brand);
+  document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===lang?"true":"false"));
+  $("#skip").textContent=t(U.skip);$("#back").textContent=t(U.up);$("#back").setAttribute("aria-label",lang==="fr"?"Retour en haut de la page":"Back to top");
+  $("#foot1").textContent=t(U.foot1);$("#foot2").textContent=t(U.foot2);document.body.classList.remove("team");
+
+  let hero,view,title;
+  if(r.k==="home"){hero=heroHome();view=viewHome();title=t(U.homeTitle)}
+  else if(r.k==="panel"){hero=heroPanel();view=viewPanel();title=t(U.findTitle)}
+  else{hero=heroProf(r.p);view=viewProf(r.p);title=r.p.name}
+  $("#hero").innerHTML=hero;$("#app").innerHTML=view;
+  document.title=title+" · EFMD";
+
+  $("#nav").innerHTML=`<div class="wrap"><a class="tab" href="#/" ${r.k==="home"?'aria-current="page"':""}>${t(U.navGen)}</a><a class="tab" href="#/panel" ${r.k!=="home"?'aria-current="page"':""}>${t(U.navPage)}${r.k==="prof"?" · "+r.p.name:""}</a>${r.k==="home"?`<span class="sep" aria-hidden="true"></span>${U.anchors.map(a=>`<button class="tab sm" type="button" data-scroll="${a[0]}">${t(a[1])}</button>`).join("")}`:""}</div>`;
+
+  if(r.k==="home")initDrill();
+  if(r.k==="panel"){$("#finder-q").addEventListener("input",e=>{$("#finder-out").innerHTML=cardsHtml(e.target.value)})}
+  if(r.k==="prof"){$("#jump").addEventListener("change",e=>go("#/t/"+e.target.value))}
+  const key=r.k+(r.p?r.p.id:"");
+  if(!first&&key!==lastKey)scrollTo({top:0,behavior:"instant"});
+  lastKey=key;
+}
+
+/* Entraînement */
+let order=[],pos=0,POOL=[];
+function shuffle(){order=POOL.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}pos=0}
+function initDrill(){
+  POOL=BANK.flatMap(b=>b.q.map(q=>({t:b.t,q,look:b.look})));
+  if(order.length!==POOL.length)shuffle();
+  const draw=()=>{const it=POOL[order[pos]];$("#drill-theme").textContent=t(it.t);$("#drill-q").textContent=it.q;$("#drill-a").textContent=t(U.lookfor)+" "+t(it.look);$("#drill-a").hidden=true;$("#drill-show").hidden=false;$("#drill-count").textContent=U.dCount(pos+1,POOL.length)};
+  draw();
+  $("#drill-show").addEventListener("click",()=>{$("#drill-a").hidden=false;$("#drill-show").hidden=true});
+  $("#drill-next").addEventListener("click",()=>{pos++;if(pos>=order.length)shuffle();draw()});
+}
+
+/* Évènements globaux */
+document.addEventListener("click",e=>{
+  const a=e.target.closest('a[href^="#/"]');
+  if(a){e.preventDefault();go(a.getAttribute("href"));return}
+  if(e.target.closest("#skip")){e.preventDefault();$("#contenu").focus();return}
+  const l=e.target.closest("[data-lang]");
+  if(l){lang=l.dataset.lang;try{localStorage.setItem("panel-lang",lang)}catch(x){}render(true);return}
+  const s=e.target.closest("[data-scroll]");
+  if(s){const el=document.getElementById(s.dataset.scroll);if(el)el.scrollIntoView({behavior:"smooth",block:"start"})}
+});
+addEventListener("hashchange",()=>{cur=location.hash;render(false)});
+const back=$("#back");
+addEventListener("scroll",()=>back.classList.toggle("on",scrollY>600),{passive:true});
+back.addEventListener("click",()=>scrollTo({top:0}));
+render(true);
+</script>
+</body>
+</html>
