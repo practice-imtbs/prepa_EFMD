@@ -6,8 +6,8 @@ et une page par enseignant.
 
 **En ligne : https://practice-imtbs.github.io/prepa_EFMD/**
 
-Service PracTice, IMT Business School. Page non indexée par les moteurs de recherche.
+Service PracTice, IMT Business School. Page non indexée par les moteurs de recherche, protégée par mot de passe (contenu chiffré).
 
 ```
-index.html   la page entière, styles et scripts inclus
+index.html   page de connexion + contenu chiffré (AES-256-GCM) ; la source en clair n'est pas dans ce dépôt
 ```
