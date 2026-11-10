@@ -9,5 +9,6 @@ et une page par enseignant.
 Service PracTice, IMT Business School. Page non indexée par les moteurs de recherche, protégée par mot de passe (contenu chiffré).
 
 ```
-index.html   page de connexion + contenu chiffré (AES-256-GCM) ; la source en clair n'est pas dans ce dépôt
+index.html                page de connexion + contenu chiffré (AES-256-GCM) ; la source en clair n'est pas dans ce dépôt
+career-center/index.html  révision du Career Centre (Sandrine Cadieu), même protection : https://practice-imtbs.github.io/prepa_EFMD/career-center/
 ```
