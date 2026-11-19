@@ -11,4 +11,5 @@ Service PracTice, IMT Business School. Page non indexée par les moteurs de rech
 ```
 index.html                page de connexion + contenu chiffré (AES-256-GCM) ; la source en clair n'est pas dans ce dépôt
 career-center/index.html  révision du Career Centre (Sandrine Cadieu), même protection : https://practice-imtbs.github.io/prepa_EFMD/career-center/
+direction/index.html      séance Dean et équipe de direction (mission, stratégie, ressources), même protection : https://practice-imtbs.github.io/prepa_EFMD/direction/
 ```
