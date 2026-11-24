@@ -13,4 +13,5 @@ index.html                page de connexion + contenu chiffré (AES-256-GCM) ; l
 career-center/index.html  révision du Career Centre (Sandrine Cadieu), même protection : https://practice-imtbs.github.io/prepa_EFMD/career-center/
 direction/index.html      séance Dean et équipe de direction (mission, stratégie, ressources), FR / EN, même protection : https://practice-imtbs.github.io/prepa_EFMD/direction/ (?lang=en)
 ressources/index.html     séance « Resources relevant to the programme » (bibliothèque, technologie pour la pédagogie, finances, accompagnement), FR / EN, même protection : https://practice-imtbs.github.io/prepa_EFMD/ressources/ (?lang=en)
+departements/index.html   séance « Heads of academic subject areas » (profils, recherche, charge de travail, évaluation et développement des enseignants), FR / EN, même protection : https://practice-imtbs.github.io/prepa_EFMD/departements/ (?lang=en)
 ```
